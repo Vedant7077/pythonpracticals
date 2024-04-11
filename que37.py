@@ -1,10 +1,5 @@
 
-tuple_elements = tuple(input("Enter elements separated by spaces: ").split())
-
-total_sum = 0
-for item in tuple_elements:
-    for char in item:
-        if char.isdigit():
-            total_sum += int(char)
-
-print("Sum of digits:", total_sum)
+n = int(input("Enter number of elements:"))
+t = tuple(int(input(f"Enter elemnt {i+1} :"))for i in range(0,n))
+print(t)
+print(f"Sum: {sum(t)}")
